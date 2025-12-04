@@ -1,0 +1,232 @@
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE Users (
+    UserID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Username TEXT NOT NULL UNIQUE,
+    Password TEXT NOT NULL,
+    Role TEXT NOT NULL
+);
+
+CREATE TABLE UsersData (
+    dataID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Birthday TEXT,
+    BankData TEXT,
+    Health TEXT,
+    UserID INTEGER,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
+
+CREATE TABLE UsersMovement (
+    MoveID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Date TEXT,
+    timeEnter TEXT,
+    timeOut TEXT,
+    UserID INTEGER,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
+
+CREATE TABLE Suppliers (
+    SupplierID INTEGER PRIMARY KEY AUTOINCREMENT,
+    CompanyName TEXT NOT NULL,
+    INN TEXT NOT NULL
+);
+
+CREATE TABLE Materials (
+    MaterialID INTEGER PRIMARY KEY AUTOINCREMENT,
+    MaterialName TEXT NOT NULL,
+    CurrentQuantity REAL NOT NULL,
+    MinStockLevel REAL NOT NULL,
+    UnitID INTEGER,
+    FOREIGN KEY (UnitID) REFERENCES Units(UnitID)
+);
+
+CREATE TABLE Repository (
+    IdTransaction INTEGER PRIMARY KEY AUTOINCREMENT,
+    Type TEXT NOT NULL,
+    Quantity INTEGER NOT NULL,
+    MaterialID INTEGER,
+    FOREIGN KEY (MaterialID) REFERENCES Materials(MaterialID)
+);
+
+CREATE TABLE Partners (
+    partner_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    partner_type_id INTEGER,
+    company_name TEXT NOT NULL,
+    legal_address TEXT,
+    inn TEXT,
+    director_full_name TEXT,
+    contact_phone TEXT,
+    contact_email TEXT,
+    FOREIGN KEY (partner_type_id) REFERENCES PartnerTypes(partner_type_id)
+);
+
+CREATE TABLE Orders (
+    ProductID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ProductNumber TEXT NOT NULL UNIQUE,
+    PartnerId INTEGER,
+    Status TEXT,
+    Subtotal REAL,
+    FOREIGN KEY (PartnerId) REFERENCES Partners(partner_id)
+);
+
+CREATE TABLE OrderProduct (
+    OrderItemID INTEGER PRIMARY KEY AUTOINCREMENT,
+    OrderNumber INTEGER,
+    ProductID INTEGER,
+    Quantity INTEGER NOT NULL,
+    FOREIGN KEY (OrderNumber) REFERENCES Orders(ProductID),
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+);
+
+CREATE TABLE Products (
+    ProductID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ProductCode TEXT NOT NULL UNIQUE,
+    ProductName TEXT NOT NULL,
+    CostPrice REAL,
+    ProductionTime INTEGER
+);
+
+CREATE TABLE SupplyHistory (
+    SupplyID INTEGER PRIMARY KEY AUTOINCREMENT,
+    SupplierID INTEGER,
+    MaterialID INTEGER,
+    SupplyDate TEXT,
+    Quantity REAL,
+    FOREIGN KEY (SupplierID) REFERENCES Suppliers(SupplierID),
+    FOREIGN KEY (MaterialID) REFERENCES Materials(MaterialID)
+);
+
+CREATE TABLE ProductExtra (
+    ProductExtraID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ProductID INTEGER,
+    MaterialID INTEGER,
+    Quantity REAL,
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID),
+    FOREIGN KEY (MaterialID) REFERENCES Materials(MaterialID)
+);
+
+
+
+
+
+cat > mozaika.db << 'EOF'
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE Users (
+    UserID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Username TEXT NOT NULL UNIQUE,
+    Password TEXT NOT NULL,
+    Role TEXT NOT NULL
+);
+
+CREATE TABLE UsersData (
+    dataID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Birthday TEXT,
+    BankData TEXT,
+    Health TEXT,
+    UserID INTEGER,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
+
+CREATE TABLE UsersMovement (
+    MoveID INTEGER PRIMARY KEY AUTOINCREMENT,
+    Date TEXT,
+    timeEnter TEXT,
+    timeOut TEXT,
+    UserID INTEGER,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID)
+);
+
+CREATE TABLE Suppliers (
+    SupplierID INTEGER PRIMARY KEY AUTOINCREMENT,
+    CompanyName TEXT NOT NULL,
+    INN TEXT NOT NULL
+);
+
+CREATE TABLE Materials (
+    MaterialID INTEGER PRIMARY KEY AUTOINCREMENT,
+    MaterialName TEXT NOT NULL,
+    CurrentQuantity REAL NOT NULL,
+    MinStockLevel REAL NOT NULL,
+    UnitID INTEGER,
+    FOREIGN KEY (UnitID) REFERENCES Units(UnitID)
+);
+
+CREATE TABLE Repository (
+    IdTransaction INTEGER PRIMARY KEY AUTOINCREMENT,
+    Type TEXT NOT NULL,
+    Quantity INTEGER NOT NULL,
+    MaterialID INTEGER,
+    FOREIGN KEY (MaterialID) REFERENCES Materials(MaterialID)
+);
+
+CREATE TABLE Partners (
+    partner_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    partner_type_id INTEGER,
+    company_name TEXT NOT NULL,
+    legal_address TEXT,
+    inn TEXT,
+    director_full_name TEXT,
+    contact_phone TEXT,
+    contact_email TEXT,
+    FOREIGN KEY (partner_type_id) REFERENCES PartnerTypes(partner_type_id)
+);
+
+CREATE TABLE Orders (
+    ProductID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ProductNumber TEXT NOT NULL UNIQUE,
+    PartnerId INTEGER,
+    Status TEXT,
+    Subtotal REAL,
+    FOREIGN KEY (PartnerId) REFERENCES Partners(partner_id)
+);
+
+CREATE TABLE OrderProduct (
+    OrderItemID INTEGER PRIMARY KEY AUTOINCREMENT,
+    OrderNumber INTEGER,
+    ProductID INTEGER,
+    Quantity INTEGER NOT NULL,
+    FOREIGN KEY (OrderNumber) REFERENCES Orders(ProductID),
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+);
+
+CREATE TABLE Products (
+    ProductID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ProductCode TEXT NOT NULL UNIQUE,
+    ProductName TEXT NOT NULL,
+    CostPrice REAL,
+    ProductionTime INTEGER
+);
+
+CREATE TABLE SupplyHistory (
+    SupplyID INTEGER PRIMARY KEY AUTOINCREMENT,
+    SupplierID INTEGER,
+    MaterialID INTEGER,
+    SupplyDate TEXT,
+    Quantity REAL,
+    FOREIGN KEY (SupplierID) REFERENCES Suppliers(SupplierID),
+    FOREIGN KEY (MaterialID) REFERENCES Materials(MaterialID)
+);
+
+CREATE TABLE ProductExtra (
+    ProductExtraID INTEGER PRIMARY KEY AUTOINCREMENT,
+    ProductID INTEGER,
+    MaterialID INTEGER,
+    Quantity REAL,
+    FOREIGN KEY (ProductID) REFERENCES Products(ProductID),
+    FOREIGN KEY (MaterialID) REFERENCES Materials(MaterialID)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
