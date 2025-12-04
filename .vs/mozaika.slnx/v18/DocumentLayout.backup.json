@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE912034-F59D-B950-1942-B552ED94C617}|mozaika\\mozaika.csproj|c:\\users\\admin\\desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE912034-F59D-B950-1942-B552ED94C617}|mozaika\\mozaika.csproj|solutionrelative:mozaika\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE912034-F59D-B950-1942-B552ED94C617}|mozaika\\mozaika.csproj|c:\\users\\admin\\desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\forms\\arrivaleditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE912034-F59D-B950-1942-B552ED94C617}|mozaika\\mozaika.csproj|solutionrelative:mozaika\\forms\\arrivaleditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE912034-F59D-B950-1942-B552ED94C617}|mozaika\\mozaika.csproj|c:\\users\\admin\\desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE912034-F59D-B950-1942-B552ED94C617}|mozaika\\mozaika.csproj|solutionrelative:mozaika\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE912034-F59D-B950-1942-B552ED94C617}|mozaika\\mozaika.csproj|c:\\users\\admin\\desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\mozaika.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AE912034-F59D-B950-1942-B552ED94C617}|mozaika\\mozaika.csproj|solutionrelative:mozaika\\mozaika.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE912034-F59D-B950-1942-B552ED94C617}|mozaika\\mozaika.csproj|C:\\Users\\admin\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AE912034-F59D-B950-1942-B552ED94C617}|mozaika\\mozaika.csproj|solutionrelative:mozaika\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\Forms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "mozaika\\Forms\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\Forms\\LoginForm.cs",
+              "RelativeToolTip": "mozaika\\Forms\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T11:03:48.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "mozaika\\Forms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\Forms\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "mozaika\\Forms\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T10:30:44.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "mozaika.csproj",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\mozaika.csproj",
+              "RelativeDocumentMoniker": "mozaika\\mozaika.csproj",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\mozaika.csproj",
+              "RelativeToolTip": "mozaika\\mozaika.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-03T09:01:45.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArrivalEditForm.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\Forms\\ArrivalEditForm.cs",
+              "RelativeDocumentMoniker": "mozaika\\Forms\\ArrivalEditForm.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\Forms\\ArrivalEditForm.cs",
+              "RelativeToolTip": "mozaika\\Forms\\ArrivalEditForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T06:57:32.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\Program.cs",
+              "RelativeDocumentMoniker": "mozaika\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\\u0443\u0447\u0435\u0431\u0430\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430\\4\\mozaika\\mozaika\\Program.cs",
+              "RelativeToolTip": "mozaika\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T09:34:35.238Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
